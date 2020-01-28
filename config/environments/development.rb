@@ -60,4 +60,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.redis_host = 'localhost'
+  config.hosts = "dev01lep.exphosted.com"
 end

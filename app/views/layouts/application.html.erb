@@ -11,8 +11,8 @@
 
   <body>
     <% if logged_in? %>
-      <%= link_to "Old page", "http://localhost:3001/users" %><br>
-      <%= link_to "logout", logout_url, method: :delete %><br>
+      <%= link_to "Old page", "http://dev01lep.exphosted.com/two/users" %><br>
+      <%= link_to "logout", "/one/logout", method: :delete %><br>
 
       <b>This is New Application</b>
     <% end %>
