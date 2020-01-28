@@ -11,10 +11,10 @@
 
   <body>
     <% if logged_in? %>
+      <strong>This is New Application</strong>
+      <br>
       <%= link_to "Old page", "http://dev01lep.exphosted.com/two/users" %><br>
       <%= link_to "logout", "/one/logout", method: :delete %><br>
-
-      <b>This is New Application</b>
     <% end %>
     <%= yield %>
   </body>

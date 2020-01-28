@@ -1,4 +1,4 @@
-<%= form_with(model: user, local: true) do |form| %>
+<%= form_with url: (@user.new_record? ? "/one/users" : "/one/users/#{@user.id}"), scope: "user", method: (@user.new_record? ? 'post' : 'put') do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
